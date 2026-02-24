@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qaraqalpaq Sózligi - Túsindirme Sózlik, Naqıllar, Orfografiya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="site-title">Qaraqalpaq tili jańa áwlad sózligi</h1>
+            <nav>
+                <ul>
+                    <li><a href="#main-dictionary" class="nav-link active" data-target="main-dictionary">Túsindirme sózlik</a></li>
+                    <li><a href="#proverbs-dictionary" class="nav-link" data-target="proverbs-dictionary">Naqıl-maqallar sózligi</a></li>
+                    <li><a href="#phraseology-dictionary" class="nav-link" data-target="phraseology-dictionary">Frazeologiyalıq sózlik</a></li>
+                    <li><a href="#names-dictionary" class="nav-link" data-target="names-dictionary">Adam atları sózligi</a></li>
+                    <li><a href="#orphography-dictionary" class="nav-link" data-target="orphography-dictionary">Orfografiyalıq sózlik</a></li>
+                    <li><a href="#translation-dictionary" class="nav-link" data-target="translation-dictionary">Awdarma sózlik</a></li>
+                    <li><a href="#about" class="nav-link" data-target="about">Haqqında</a></li>
+                    <li><a href="#contact" class="nav-link" data-target="contact">Baylanıs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <section id="main-dictionary" class="dictionary-section active-dictionary">
+                <h2>Qaraqalpaq Túsindirme Sózligi</h2>
+                <p class="dict-description">Sózdi izleń yaki sózlik mazmunı boyınsha hárip boyınsha saylań.</p>
+
+                <div class="search-area-wrapper">
+                    <div class="search-box">
+                        <input type="text" id="searchInput" placeholder="Sóz kiritiń..." disabled>
+                        <button id="searchButton" class="search-btn" disabled>Izlew</button>
+                    </div>
+                    <div class="search-options">
+                        <label><input type="radio" name="search-type-main" value="includes" checked> Sózdi óz ishine aladı</label>
+                        <label><input type="radio" name="search-type-main" value="startswith"> Sóz baslanadı</label>
+                    </div>
+                </div>
+
+                <div class="content-wrapper">
+                    <div id="mainIndexList" class="index-list">Júklenbekte...</div>
+                    <div id="resultsArea" class="results-area">
+                        <p class="initial-message">Izlew nátiyjeleri bul jerde kórinedi.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="proverbs-dictionary" class="dictionary-section hidden-section">
+                <h2>Naqıl-maqallar Sózligi</h2>
+                <p class="dict-description">Naqıl yamasa maqaldı izleń.</p>
+
+                <div class="search-area-wrapper">
+                    <div class="search-box">
+                        <input type="text" id="proverbsSearchInput" placeholder="Naqıl kiritiń..." disabled>
+                        <button id="proverbsSearchButton" class="search-btn" disabled>Izlew</button>
+                    </div>
+                    <div class="search-options">
+                        <label><input type="radio" name="search-type-proverbs" value="includes" checked> Naqıldıń ishinde</label>
+                        <label><input type="radio" name="search-type-proverbs" value="startswith"> Naqıl baslanadı</label>
+                    </div>
+                </div>
+
+                <div class="content-wrapper">
+                    <div id="proverbsIndexList" class="index-list">Júklenbekte...</div>
+                    <div id="proverbsResultsArea" class="results-area">
+                        <p class="initial-message">Izlew nátiyjeleri bul jerde kórinedi.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="phraseology-dictionary" class="dictionary-section hidden-section">
+                <h2>Frazeologiya Sózligi</h2>
+                <p class="dict-description">Frazeologiya/túraqtırǵan sóz dizbegin izleń.</p>
+
+                <div class="search-area-wrapper">
+                    <div class="search-box">
+                        <input type="text" id="phraseologySearchInput" placeholder="Frazeologiya kiritiń..." disabled>
+                        <button id="phraseologySearchButton" class="search-btn" disabled>Izlew</button>
+                    </div>
+                    <div class="search-options">
+                        <label><input type="radio" name="search-type-phraseology" value="includes" checked> So'z dizbegini óz ishine aladı</label>
+                        <label><input type="radio" name="search-type-phraseology" value="startswith"> So'z dizbegi baslanadı</label>
+                    </div>
+                </div>
+
+                <div class="content-wrapper">
+                    <div id="phraseologyIndexList" class="index-list">Júklenbekte...</div>
+                    <div id="phraseologyResultsArea" class="results-area">
+                        <p class="initial-message">Izlew nátiyjeleri bul jerde kórinedi.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="names-dictionary" class="dictionary-section hidden-section">
+                <h2>Adam atları Sózligi</h2>
+                <p class="dict-description">Atlardıń maǵanasın izleń.</p>
+
+                <div class="search-area-wrapper">
+                    <div class="search-box">
+                        <input type="text" id="namesSearchInput" placeholder="Attı kiritiń..." disabled>
+                        <button id="namesSearchButton" class="search-btn" disabled>Izlew</button>
+                    </div>
+                    <div class="search-options">
+                        <label><input type="radio" name="search-type-names" value="includes" checked> Attı óz ishine aladı</label>
+                        <label><input type="radio" name="search-type-names" value="startswith"> Attıń baslanıwı</label>
+                    </div>
+                </div>
+
+                <div class="content-wrapper">
+                    <div id="namesIndexList" class="index-list">Júklenbekte...</div>
+                    <div id="namesResultsArea" class="results-area">
+                        <p class="initial-message">Izlew nátiyjeleri bul jerde kórinedi.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="orphography-dictionary" class="dictionary-section hidden-section">
+                <h2>Orfografiya Sózligi</h2>
+                <p class="dict-description">Sózlerdiń durıs jazılıwın tekseriń (Orfografiya lug'ati).</p>
+
+                <div class="search-area-wrapper">
+                    <div class="search-box">
+                        <input type="text" id="orphographySearchInput" placeholder="Sóz kiritiń..." disabled>
+                        <button id="orphographySearchButton" class="search-btn" disabled>Izlew</button>
+                    </div>
+                    <div class="search-options">
+                        <label><input type="radio" name="search-type-orphography" value="includes" checked> Sózdi óz ishine aladı</label>
+                        <label><input type="radio" name="search-type-orphography" value="startswith"> Sóz baslanadı</label>
+                    </div>
+                </div>
+
+                <div class="content-wrapper">
+                    <div id="orphographyIndexList" class="index-list">Júklenbekte...</div>
+                    <div id="orphographyResultsArea" class="results-area">
+                        <p class="initial-message">Izlew nátiyjeleri bul jerde kórinedi.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="about" class="info-section hidden-section">
+                <h2>Haqqında</h2>
+                <p>Bul qaraqalpaq tilindegi sózliklerdi elektron formatta usınıwshı joybar. Maǵlıwmatlar bazası turaqlı jańalanıp baradı.</p>
+                <p>Eger sózliklerde qáte tapsańız yaki usınıslarıńız bolsa, "Baylanıs" arqalı xabarlaşsańız boladı.</p>
+            </section>
+            
+            <section id="contact" class="info-section hidden-section">
+                <h2>Baylanıs</h2>
+                <p>Joybar ijodkorlari bilan bog'lanish uchun quyidagi manzilga yozing:</p>
+                <p>Email: <a href="mailto:info@karakalpak-sozlik.uz">info@karakalpak-sozlik.uz</a></p>
+                <p>Telegram: @sozlik_admin</p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Qaraqalpaq Sózligi. Barliq huqıqlar qorǵalǵan.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
